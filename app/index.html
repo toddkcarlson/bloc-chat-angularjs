@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
+    <div>
+       <a ui-sref="rooms">Rooms</a>
+    </div> 
+
     <ui-view></ui-view>	
     
     <!-- Angular -->
@@ -34,6 +38,9 @@
 	</script>
 
     <!-- Application Files -->
-    <script src="/scripts/app.js"></script>    
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/factories/Room.js"></script>
+    <script src="/scripts/controllers/RoomsCtrl.js"></script>    
+
 </body>
 </html>
