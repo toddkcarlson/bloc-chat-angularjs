@@ -1,2 +1,3 @@
 <h2>You haven't seen nothing yet</h2>
-<p>{{ rooms.availableRooms }}</p>
+<li class="room-name" ng-repeat="room in rooms.availableRooms.all" >{{room.$value}}
+</li>
