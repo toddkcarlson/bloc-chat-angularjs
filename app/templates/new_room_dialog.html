@@ -1,0 +1,13 @@
+<div class="modal-new-room">
+    <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Create new room</h3>
+    </div>
+    <div class="modal-form-box">
+        <form class="modal-form" ng-submit="dialog.addData()">
+            <div class="status-bar">{{dialog.statusBar}}</div>
+            <input type="text" class="room-input" value="" ng-model="dialog.inputData"><br>
+            <input type="button" class="modal-button cancel" value="Cancel" ng-click="dialog.cancel()">
+            <input type="submit" class="modal-button create" value="Create Room">
+        </form>
+    </div>
+</div>

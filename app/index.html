@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <div>
-       <a ui-sref="rooms">Rooms</a>
-    </div> 
+
 
     <ui-view></ui-view>	
-    
+  
+    <!-- AngularUI Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+   
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
  
@@ -37,10 +38,16 @@
 	  firebase.initializeApp(config);
 	</script>
 
+
+    <div>
+       <a ui-sref="rooms">Rooms</a>
+    </div> 
+
     <!-- Application Files -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/factories/Room.js"></script>
-    <script src="/scripts/controllers/RoomsCtrl.js"></script>    
+    <script src="/scripts/controllers/RoomsCtrl.js"></script>
+    <script src="/scripts/controllers/DialogCtrl.js"></script>        
 
 </body>
 </html>
