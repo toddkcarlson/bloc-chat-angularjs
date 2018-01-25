@@ -1,13 +1,13 @@
 (function() {
     function DialogCtrl(Room, $uibModalInstance) {
-        var Dialog = this;
+        var dialog = this;
 
         dialog.chatRoomArray = Room;
         dialog.statusBar = "Enter a room name";
 
-        modal.addData = function(){
+        dialog.addData = function(){
             if(dialog.inputData){
-                Room.addNewRoom(dialog.inputData);
+                Room.add(dialog.inputData);
                 dialog.cancel();
             } else {
                 alert("Room name should not be empty.");
