@@ -10,7 +10,6 @@
             console.log(room.$id);
             home.currentRoomId = room.$id;
         };
-
     }
 
     angular
