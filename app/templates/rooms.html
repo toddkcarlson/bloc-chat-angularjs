@@ -6,7 +6,7 @@
     <span class="room-title">{{home.currentRoomTitle}}</span>
      <ul class="messages-list">
           <li class="message" ng-repeat="message in home.messageArray track by $index">
-              <span class="message-username">{{message.user}}</span><br>
+              <span class="message-username">{{message.username}}</span><br>
               <span class="message-content">{{message.content}}</span><span class="message-time">{{message.sentAt}}</span>
           </li>
      </ul>
